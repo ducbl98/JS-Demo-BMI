@@ -1,0 +1,24 @@
+let height = +prompt("Nhập chiều cao của bạn (m) :")
+let weight = +prompt("Nhập cân nặng của bạn (kg):")
+BMI = height/(weight*weight);
+if(BMI<=18.5){
+    alert("Bạn đang gầy");
+}else {
+    if (BMI>18.5&&BMI<=24.9){
+        alert("Bạn bình thường");
+    }else {
+        if (BMI>24.9&&BMI<=29.9){
+            alert("Bạn hơi béo");
+        }else {
+            if(BMI>29.9&&BMI<=34.9){
+                alert("Bạn bị béo phì cấp 1 ");
+            }else {
+                if(BMI>34.9&&BMI<=39.9) {
+                    alert("Bạn bị béo phì cấp 2 ");
+                }else{
+                    alert("Bạn bị béo phì cấp 3 ");
+                }
+            }
+        }
+    }
+}
