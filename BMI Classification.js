@@ -1,6 +1,7 @@
-let height = +prompt("Nhập chiều cao của bạn (m) :")
-let weight = +prompt("Nhập cân nặng của bạn (kg):")
-BMI = height/(weight*weight);
+let height = parseFloat(prompt("Nhập chiều cao của bạn (m) :"))
+let weight = parseFloat(prompt("Nhập cân nặng của bạn (kg):"))
+BMI = weight/(height*height);
+document.getElementById("bmi").innerHTML = BMI;
 if(BMI<=18.5){
     alert("Bạn đang gầy");
 }else {
